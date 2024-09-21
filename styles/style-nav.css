@@ -10,10 +10,23 @@ body{
     background: #1C2023;
     font-family: "rubik", sans-serif;
 }
-
+.nav{
+    background: url(/images/nav_background.svg) no-repeat right/900px 600px;
+    position: relative;
+}
+.nav::after{
+    content: '';
+    background: url(/images/snow.gif)no-repeat right/cover;
+    position: absolute;
+    z-index: 100;
+    width: 900px;
+    right: 0;
+    top: 0;
+    height: 474px;
+}
 .nav_img {
-    width: 1920px;
-    height: 5460px;
+    width: 900px;
+    height: 600px;
     content: "";
     position: absolute;
     top: 0;
