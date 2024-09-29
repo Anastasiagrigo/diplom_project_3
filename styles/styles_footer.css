@@ -1,0 +1,133 @@
+.footer {}
+
+.container {}
+
+.footer_top {}
+
+.footer-menu {
+    display: flex;
+    width: 525px;
+    height: 27px;
+    justify-content: space-between;
+    list-style-type: none;
+    position: absolute;
+    margin: 160px 0px 0px 270px;
+}
+
+.flex {}
+
+.flex-center {}
+
+.menu-link {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    list-style-type: none;   
+    text-decoration: none;
+}
+
+.footer-language {
+    color: #8C96A0;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin: 160px 0px 0px 1020px;
+    position: absolute;
+}
+
+.footer-languageE{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+.footer_palystation-logo{
+    width: 46px;
+    height: 35px;
+    position: absolute;
+    margin: 320px 0px 0px 740px;
+}
+.footer-info {
+    color: #8C96A0;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 904px;
+    position: absolute;
+    margin: 230px 0px 0px 270px;
+}
+
+.footer_icon {
+    width: 786.303px;
+    height: 439.636px;
+    z-index: -2;
+    position: absolute;
+    margin-left: 500px;
+}
+
+.footer-year {
+    color: #8C96A0;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 380px 0px 0px 745px;
+    position: absolute;
+}
+
+.footer-rights {
+    color: #8C96A0;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 410px 0px 0px 600px;
+    position: absolute;
+}
+.footer_tomkovich-link {
+    color: #8856D9;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 320px) {
+    .footer_icon{
+        display: none;
+    }
+    .footer-rights{
+        display: flex;
+        width: 700px;
+    }
+    .footer-info{
+        width: 500px;
+        margin-left: 500px;
+    }
+    .footer-menu {
+        margin: 160px 0px 0px 486px;
+    }
+    .footer-language{
+        display: none;
+    }
+
+
+
+}

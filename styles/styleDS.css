@@ -1,0 +1,113 @@
+.dualSense_section {}
+
+.dualSense-title {
+    width: 208px;
+    height: 46.768px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 50px 0px 60px 630px;
+}
+ 
+.dualSense_description {
+    width: 425px;
+    height: 53.733px;
+    color: #A9C7C7;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;  
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+.dualSense_description_purple {
+    color: #8856D9;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.dualSense_description_red {
+    color: #FF4136;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.dualSense_descriptin_pb{
+    display: flex;
+}
+
+.dualSense_description-price {
+    width: 105px;
+    height: 35.822px;   
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 250px;
+    margin-top: 60px;
+}
+
+.dualSense_description_button {
+    width: 274px;
+    height: 46.768px;
+    border-radius: 6px;
+    background: #FF4136;
+    margin-left: 33px;
+    margin-top: 60px;
+}
+
+.dualSense_description_button-text {
+    width: 260px;
+    height: 18.906px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 3px;
+}
+
+.dualSense_description-img {
+    margin: 57px 0px 0px 880px;
+    position: absolute;
+}
+
+.dualSense_description_img-shadow {
+    position: absolute;
+/* width: 194px;
+    height: 119px; */
+    flex-shrink: 0;
+    fill: rgba(79, 96, 152, 0.80);
+    filter: blur(75px);
+    margin: 20px 0px 0px 795px;
+    z-index: -2;
+}
+
+
+
+@media (max-width: 320px) {
+    .dualSense_description-img {
+        display: none;
+    }
+    .dualSense_description_img-shadow{
+        display: none;
+    }
+    .dualSense_infos{
+        margin-left: 300px;
+    }
+}

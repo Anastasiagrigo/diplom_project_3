@@ -1,0 +1,288 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s;
+        
+}
+.modal.opened {
+    visibility: visible;
+    opacity: 1;
+}
+.modal_wrapper {
+    background: linear-gradient(180deg, #30373f 0%, #000000 99.82%);
+    border-radius: 12px;
+    padding: 32px;
+    position: relative;
+}
+.modal-wrapper::before {
+    width: 90%;
+    height: 90%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url(images/modal.png) no-repeat center/cover;
+}
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+.modal-version {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    /* Replace $white with the actual color value */
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+.modal_title {
+    color: #8856D9;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+.modal_subtitle {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    margin-left: 130px;
+}
+.form {
+    margin-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    justify-content: space-between;
+    width: 405px;
+}
+.form-group {
+    width: calc(50% - 13px);
+    
+}
+.label_cc{
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.label_ccv {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+
+}
+.label_inst {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+.label_ex {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+
+}
+.form_input_credit-inst{
+    width: 406px;
+    height: 44.778px;
+    border-radius: 6px;
+    background: #30373F;
+    padding-left: 10px;
+}
+.form_input_exccv {
+    width: 190px;
+    height: 44.778px;
+    border-radius: 6px;
+    background: #30373F;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.form-group.full {
+    width: 100%;
+}
+.form-group label {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: white;
+    /* Replace $white with the actual color value */
+    margin-bottom: 7px;
+}
+.form-group input {
+    background: dark;
+    /* Replace $dark with the actual color value */
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 16px 14px;
+    color: #D9D9D9;
+    width: 100%;
+}
+.form-checkbox {
+    position: relative;
+    column-gap: 12px;
+}
+.form-checkbox .check {
+    background: dark;
+    /* Replace $dark with the actual color value */
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 6px;
+}
+.form-checkbox label {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: white;
+    /* Replace $white with the actual color value */
+}
+
+.form-checkbox label .red {
+    color: #ff4136;
+}
+.form-checkbox input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.form-checkbox input:checked+.check::before {
+    content: "✓";
+    color: #ff4136;
+}
+.modal-description {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #d9d9d9;
+}
+.modal-total {
+    font-weight: 500;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    /* Replace $white with the actual color value */
+}
+.modal-total__text {
+}
+.modal-total__price {
+    font-size: 20px;
+}
+.modal-submit {
+    /* Add your button and hoverViolet styles here */
+    width: 100%;
+    justify-content: center;
+}
+.modal-close {
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    /* Changed to cover the entire viewport */
+    left: 0;
+    /* Changed to cover the entire viewport */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 998;
+    /* Should be lower than modal */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s;
+}
+.overlay.opened {
+    visibility: visible;
+    opacity: 1;
+}
+@keyframes gravitation {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.modal-submit{
+    border-radius: 6px;
+    background: #8856D9;
+    width: 406px;
+    height: 39.802px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 30px;
+}

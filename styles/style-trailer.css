@@ -1,0 +1,74 @@
+.section_trailer {
+    position: relative;
+}
+
+.trailer_title {
+    width: 241px;
+    height: 46.768px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 150px;
+    margin-left: 630px;
+}
+
+.trailer_info{
+    margin-top: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+}
+
+.trailer_subtitle {
+    width: 404px;
+    height: 38.807px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.trailer_btn {
+    width: 93px;
+    height: 33.832px;
+    border-radius: 6px;
+    background: #30373F;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.trailer_btn-text {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.832px;
+    /* Match the height of the button */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* Ensure it takes the full height of the button */
+}
+
+.trailer_video {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 32px;
+    transition: transform .5s;
+    transform: scale(1);
+}
